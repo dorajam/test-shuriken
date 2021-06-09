@@ -1,0 +1,12 @@
+title: Seq2Graph Experiment
+worker_config:
+    command: [python,main.py]
+    resources:
+        mem: 4
+        cpu: 4
+        gpu: 1
+algorithm:
+    name: GridSearch
+    config:
+        dimensions:
+            switch_at: [20]
